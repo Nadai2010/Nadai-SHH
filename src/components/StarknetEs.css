@@ -13,7 +13,7 @@
 
 /* Añade un fondo o imagen de fondo al contenedor principal */
 .starknet-es-container {
-  background-image: url('ruta-de-la-imagen-de-fondo.jpg');
+  background-image: fixed;
   background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */

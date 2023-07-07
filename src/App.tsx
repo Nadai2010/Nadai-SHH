@@ -8,7 +8,7 @@ import NetworkInfo from './components/NetworkInfo';
 import Home from './components/Home';
 import HDSComponent from './components/HDS';
 import StarknetESComponent from './components/StarknetEs';
-import JuegaComponent from './components/Juega';
+import NHSComponent from './components/NftForm';
 
 function App() {
   const { isConnected } = useAccount();
@@ -34,13 +34,13 @@ function App() {
                 </Link>
               </li>
               <li className="mr-4">
-                <Link to="/starknet-es" className="link">
-                  Starknet-ES
+                <Link to="/NHS" className="link">
+                  NHS
                 </Link>
               </li>
               <li className="mr-4">
-                <Link to="/juega" className="link">
-                  Juega
+                <Link to="/starknet-es" className="link">
+                  Starknet-ES
                 </Link>
               </li>
               <li className="ml-auto mr-4">
@@ -57,9 +57,9 @@ function App() {
               {/* Contenido de la pestaña activa */}
               <Routes>
                 <Route path="/" element={<HomeWithTokenForm />} />
+                <Route path="/NHS" element={<NHSPage />} />
                 <Route path="/hds" element={<HDSPage />} />
                 <Route path="/starknet-es" element={<StarknetESPage />} />
-                <Route path="/juega" element={<JuegaPage />} />
               </Routes>
             </div>
           ) : (
@@ -106,8 +106,8 @@ function StarknetESPage() {
   return <StarknetESComponent />;
 }
 
-function JuegaPage() {
-  return <JuegaComponent />;
+function NHSPage() {
+  return <NHSComponent />;
 }
 
 export default App;
