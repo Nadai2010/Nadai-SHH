@@ -47,7 +47,7 @@ const StarknetEs = () => {
     },
     {
       id: "2",
-      image: "../src/assets/CairoBook.png",
+      image: "/assets/CairoBook.png",
       title: "Título del Recurso 2",
       description: "Descripción del Recurso 2",
       link: "https://cairo-book.github.io/",
