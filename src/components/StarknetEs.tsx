@@ -40,7 +40,7 @@ const StarknetEs = () => {
   const resources: Resource[] = [
     {
       id: "1",
-      image: "../src/assets/StarknetBook.png",
+      image: "./assets/StarknetBook.png",
       title: "Starknet Book",
       description: "El libro de todo el ecosistema de Starknet, una documentación exhaustiva de arquitectura, y Starknet general, Starknet Book",
       link: "https://book.starknet.io/",
