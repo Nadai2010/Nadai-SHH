@@ -1,0 +1,12 @@
+.source-container {
+    position: absolute;
+    bottom: -10px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+    right: 2rem; /* Ajusta la distancia desde la derecha según tus necesidades */
+    margin-bottom: 20px; /* Ajusta el margen inferior para dejar espacio para el pie de página */
+    display: flex; /* Aplica un diseño flexible */
+  }
+  
+  .source-container a {
+    display: block;
+    margin-right: 1rem; /* Ajusta el margen derecho según tus necesidades */
+  }

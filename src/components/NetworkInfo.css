@@ -1,0 +1,17 @@
+.network-info-container {
+    margin-top: 2rem; /* Ajusta la distancia desde los elementos superiores según tus necesidades */
+    display: flex; /* Aplica un diseño flexible */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: relative; /* Agrega posición relativa */
+    z-index: 1; /* Ajusta el valor del z-index según tus necesidades */
+  }
+  
+  
+  .network-info-container p {
+    margin-right: 1rem; /* Ajusta el margen derecho según tus necesidades */
+  }
+  
+  .network-info-container p:last-child {
+    margin-right: 0; /* Elimina el margen derecho para el último elemento */
+  }
+  

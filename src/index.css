@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap");
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+:root {
+  font-family: "IBM Plex Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url('/src/assets/Portada.jpeg');
+  background-size: 100%;
+  background-attachment: fixed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.shadowed {
+  text-shadow: #ff727f 1px 1px;
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 1rem 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #a93af3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-transform: uppercase;
+  filter: drop-shadow(3px 4px 0 #0d0d2a);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.btn:hover {
+  border-color: #6b099c;
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.box-shadow {
+  filter: drop-shadow(3px 4px 0 #eee);
+}
+
+input {
+  font-size: 0.85rem;
+  font-family: "IBM Plex Mono";
+  padding: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media (max-width: 768px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .link {
+    margin-top: 8px;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+nav * {
+  margin-bottom: 10%;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f4f4;
+  margin-top: 10px; /* Ajusta el valor según sea necesario */
+}
+
