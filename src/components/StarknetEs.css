@@ -13,7 +13,7 @@
 
 /* Añade un fondo o imagen de fondo al contenedor principal */
 .starknet-es-container {
-  background-image: fixed;
+  background-image: url('ruta-de-la-imagen-de-fondo.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -31,15 +31,17 @@
 
 /* Ajusta el tamaño y el posicionamiento de los videos */
 .starknet-es-video-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Asegura que los videos ocupen todo el ancho disponible */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; /* Ajusta el valor según sea necesario */
+  margin-bottom: 2rem;
 }
 
 .starknet-es-video-item {
-  margin: 0 10px;
-  width: 50%; /* Ajusta el tamaño de cada video al 50% del contenedor */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .starknet-es-video {
@@ -70,16 +72,16 @@
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #a93af3;
+  background-color: #f33adaa1;
   color: rgba(255, 255, 255, 0.87);
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s;
-  margin: 0 200px;
+  margin: 0 5px;
 }
 
 .starknet-es-button:hover {
-  background-color: #0d0b52a9;
+  background-color: #4f007cfb;
 }
 
 /* Ajusta el tamaño y el posicionamiento del formulario */

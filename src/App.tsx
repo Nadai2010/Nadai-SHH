@@ -9,6 +9,8 @@ import Home from './components/Home';
 import HDSComponent from './components/HDS';
 import StarknetESComponent from './components/StarknetEs';
 import NHSComponent from './components/NftForm';
+import WorkshopComponent from './components/Workshop';
+import JuegaComponent from './components/Juega';
 
 function App() {
   const { isConnected } = useAccount();
@@ -35,12 +37,22 @@ function App() {
               </li>
               <li className="mr-4">
                 <Link to="/NHS" className="link">
-                  NHS
+                  NHT
                 </Link>
               </li>
               <li className="mr-4">
                 <Link to="/starknet-es" className="link">
                   Starknet-ES
+                </Link>
+              </li>
+              <li>
+                <Link to="/Workshop" className="link">
+                  Workshop
+                </Link>
+              </li>
+              <li>
+                <Link to="/Juega" className="link">
+                  Juega
                 </Link>
               </li>
               <li className="ml-auto mr-4">
@@ -50,7 +62,7 @@ function App() {
           </nav>
         )}
 
-        {/* Contenido principal */}
+       {/* Contenido principal */}
         <div className="flex-1 flex items-center text-center justify-center h-full">
           {isConnected ? (
             <div className="flex flex-col">
@@ -60,6 +72,8 @@ function App() {
                 <Route path="/NHS" element={<NHSPage />} />
                 <Route path="/hds" element={<HDSPage />} />
                 <Route path="/starknet-es" element={<StarknetESPage />} />
+                <Route path="/Workshop" element={<WorkshopPage />} />
+                <Route path="/Juega" element={<JuegaPage />} />
               </Routes>
             </div>
           ) : (
@@ -108,6 +122,14 @@ function StarknetESPage() {
 
 function NHSPage() {
   return <NHSComponent />;
+}
+
+function WorkshopPage() {
+  return <WorkshopComponent />;
+}
+
+function JuegaPage() {
+  return <JuegaComponent />;
 }
 
 export default App;

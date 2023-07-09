@@ -6,77 +6,77 @@ import "./NftForm.css";
 
 const nfts = [
     {
-      symbol: "NHS - 1",
+      symbol: "NHT - 1",
       contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
       metadata: {
         name: "HDS - Episodio 1",
-        description: "Primer Episodio Introducciotr sobre Staknet",
+        description: "🎙️ Space con Nurst y Nadai - Hablando de Starknet",
         image: "https://ipfs.io/ipfs/QmaAwa9LBNCmwJKmf14j8wvuQUsYYbijq3kLQjeB9wVtHB/1.gif",
       },
     },
     {
-      symbol: "NHS - 2",
+      symbol: "NHT - 2",
       contractAddress: "0x0115b36e34b88c08d71eb648218d94e1333344a2f141963c3dbf892b18e292e5",
       metadata: {
-        name: "Mi NFT 2",
-        description: "Descripción de mi NFT 2",
-        image: "",
+        name: "HDS - Episodio 2",
+        description: "🎙️ Space con Damian - Starknet Español",
+        image: "https://ipfs.io/ipfs/QmWK5oeDdWjR8TwRbyiggrjzR5gpAPJYhLzF6WYVZWgFL7/1.gif",
       },
     },
     {
-      symbol: "NHS - 1",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 3",
+      contractAddress: "0x00ee9266554a1080fa2126a6d18299e9722b717eb7bace64ca783301d3c68348",
       metadata: {
-        name: "HDS - Episodio 1",
-        description: "Descripción de mi NFT 1",
-        image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
+        name: "HDS - Episodio 3",
+        description: "🎙️ Space con Fran - Giza",
+        image: "https://ipfs.io/ipfs/QmeuQXRPee8uGpXmw9Hqdw42WviJKHyL78L6dB7kegmJzy/1.gif",
       },
     },  {
-      symbol: "NHS - 1",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 4",
+      contractAddress: "0x03a2577d15e9f0945b41b454570c292b6ae43e13a6750d5afecf0befd0b311aa",
       metadata: {
-        name: "HDS - Episodio 1",
-        description: "Descripción de mi NFT 1",
-        image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
+        name: "HDS - Episodio 4",
+        description: "🎙️ Space con David - Starkware",
+        image: "https://ipfs.io/ipfs/Qmb8tG1Z5LWFJ5SFaadXAwHPwNiPrrabYBkYHQsda5eWvc/1.gif",
       },
     },  {
-      symbol: "NHS - 1",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 5",
+      contractAddress: "0x05beae1cbee50d459ad26729fdbc526e99f5cbf347659fb3ebbb300a37ab336d",
       metadata: {
-        name: "HDS - Episodio 1",
-        description: "Descripción de mi NFT 1",
-        image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
+        name: "HDS - Episodio 5",
+        description: "🎙️ Space con Joxes - L2 Español",
+        image: "https://ipfs.io/ipfs/QmeR8F2Wz4MAcxGVHhCqLik4UC1B56QnS4AYbSDBYk5Vt7/1.gif",
       },
     },  {
-      symbol: "NHS - 1",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 6",
+      contractAddress: "0x07d5a2a46e422fd5d5706ca8599db243760ae29b4a58a975159cebe5e7f2ea69",
       metadata: {
-        name: "HDS - Episodio 1",
-        description: "Descripción de mi NFT 1",
-        image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
+        name: "HDS - Episodio 6",
+        description: "🎙️ Space con LambdaClass",
+        image: "https://ipfs.io/ipfs/QmSg3Enchr5zittqVqnV7zyQ8RsY1uqNVdA1TACi8eHALW/1.gif",
       },
     },  {
-      symbol: "NHS - 1",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 7",
+      contractAddress: "0x0266fa8b7380043135c23b862be06a942adb955fef7a46e1b8c7d73d7b48befd",
       metadata: {
-        name: "HDS - Episodio 1",
-        description: "Descripción de mi NFT 1",
-        image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
+        name: "HDS - Episodio 7",
+        description: "🎙️ Space con Glihm - Madara",
+        image: "https://ipfs.io/ipfs/QmNoPoQ2sL5aSRYywRbhsapEvZ5L54NZXSNMMZCqffdRpZ/1.gif",
       },
     },  {
-      symbol: "NHS - 1",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 8",
+      contractAddress: "0x02269df2f4cae317c90fdcb1a8fa8fbe21744ac9e197721ecaa3baf14c1b3571",
       metadata: {
-        name: "HDS - Episodio 1",
-        description: "Descripción de mi NFT 1",
-        image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
+        name: "HDS - Episodio 8",
+        description: "🎙️ Space con Ismael - Argent X",
+        image: "https://ipfs.io/ipfs/QmNwj878FRQaNjS9jDAhSiePaqdWr6QCtc5QWqmUj7aqHi/1.png",
       },
     },  {
-      symbol: "NHS - 9",
-      contractAddress: "0x058fb0b06fd6844a909031e56a95dfd859320e44c12538e7da419e9fc4475f90",
+      symbol: "NHT - 9",
+      contractAddress: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
       metadata: {
         name: "HDS - Episodio 9",
-        description: "Descripción de mi NFT 1",
+        description: "🎙️ Space con Nico - Cafe Cosmos",
         image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
       },
     },
@@ -138,12 +138,14 @@ export default function NftForm() {
   }
 
   return (
-    <div className={`token-form ${isExpanded ? "expanded" : ""}`}>
-      <div>
+    <div className="nft-container">
+    <div className="nft-es-title text-4xl shadowed mb-5">Galeria y Envio de NHT</div>
+    <div className={`nft-form ${isExpanded ? "expanded" : ""}`}>
+       <div>
         <h3>
           {selectedNFT?.symbol} token{" "}
           <a
-            href={`https://goerli.voyager.online/contract/${selectedNFT?.contractAddress}`}
+            href={`https://testnet.starkscan.co/contract/${selectedNFT?.contractAddress}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -151,7 +153,7 @@ export default function NftForm() {
           </a>
         </h3>
         <strong>
-          Balance: {balance?.formatted} {selectedNFT?.symbol}
+          Colección: {balance?.formatted} {selectedNFT?.symbol}
         </strong>
         {nftMetadata && (
           <div>
@@ -161,8 +163,8 @@ export default function NftForm() {
               alt={nftMetadata?.name}
               onClick={handleImageClick}
             />
-            <p>Name: {nftMetadata?.name}</p>
-            <p>Description: {nftMetadata?.description}</p>
+            <p>Nombre: {nftMetadata?.name}</p>
+            <p>Información: {nftMetadata?.description}</p>
           </div>
         )}
         <form onSubmit={send}>
@@ -218,5 +220,7 @@ export default function NftForm() {
         {data && <p>Tx: {data.transaction_hash}</p>}
       </div>
     </div>
+    </div>
+ 
   );
 }

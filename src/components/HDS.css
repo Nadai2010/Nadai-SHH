@@ -2,6 +2,12 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 2%;
+  
+}
+
+.hds-video {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .hds-container {
@@ -35,6 +41,7 @@
 
 .video-container {
   margin-right: 2vw;
+  
 }
 
 .hds-controls {
@@ -53,7 +60,7 @@
   display: inline-block;
   margin: 1vw;
   padding: 0.5vw 2vw;
-  background-color: #21226d4f;
+  background-color: #6d212e4f;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -134,6 +141,7 @@
   .video-container {
     margin-right: 0;
     margin-bottom: 4vw;
+    
   }
 
   .hds-button {
