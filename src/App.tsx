@@ -11,6 +11,7 @@ import StarknetESComponent from './components/StarknetEs';
 import NHSComponent from './components/NftForm';
 import WorkshopComponent from './components/Workshop';
 import JuegaComponent from './components/Juega';
+import ComandosComponent from './components/Comandos'
 
 function App() {
   const { isConnected } = useAccount();
@@ -55,6 +56,11 @@ function App() {
                   Juega
                 </Link>
               </li>
+              <li>
+                <Link to="/Comandos" className="link">
+                  Terminal
+                </Link>
+              </li>
               <li className="ml-auto mr-4">
                 <SignForm />
               </li>
@@ -74,6 +80,7 @@ function App() {
                 <Route path="/starknet-es" element={<StarknetESPage />} />
                 <Route path="/Workshop" element={<WorkshopPage />} />
                 <Route path="/Juega" element={<JuegaPage />} />
+                <Route path="/Comandos" element={<ComandosPage />} />
               </Routes>
             </div>
           ) : (
@@ -131,5 +138,9 @@ function WorkshopPage() {
 function JuegaPage() {
   return <JuegaComponent />;
 }
+function ComandosPage() {
+  return <ComandosComponent />;
+}
+  
 
 export default App;
