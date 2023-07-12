@@ -9,7 +9,7 @@ const Comandos = () => {
   const [selectedFunction, setSelectedFunction] = useState('');
   const [functionCode, setFunctionCode] = useState('');
 
-  const handleCopyFunction = () => {
+const handleCopyFunction = () => {
     const codeElement = document.querySelector(".function-content pre");
     if (codeElement) {
       const range = document.createRange();
@@ -19,13 +19,13 @@ const Comandos = () => {
       document.execCommand("copy");
       window.getSelection()?.removeAllRanges();
     }
-  };
+};
 
-  const handleCommandChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+const handleCommandChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCommand(event.target.value);
-  };
+};
 
-  const handleExecuteCommand = () => {
+const handleExecuteCommand = () => {
     if (command.trim() === 'cairo-test hello-world.cairo') {
       runHelloWorldTests();
     } else if (command.trim() === 'cairo-test Assert.cairo') {
@@ -36,6 +36,16 @@ const Comandos = () => {
       runVariableTests2();
     } else if (command.trim() === 'cairo-run Functions.cairo') {
       runVariableTests2();
+    } else if (command.trim() === 'cairo-run Expression_If.cairo') {
+      runIfTest();
+    } else if (command.trim() === 'cairo-run Name_parameters_2.cairo') {
+      runNameParTest();
+    } else if (command.trim() === 'cairo-run Name_parameters.cairo') {
+      runNameParTest2();
+    } else if (command.trim() === 'cairo-run Felt.cairo') {
+      runFelt();
+    } else if (command.trim() === 'cairo-run Felt2.cairo') {
+      runFelt2();
     } else {
       setOutput(['Command not recognized']);
     }
@@ -44,7 +54,7 @@ const Comandos = () => {
     setCommand('');
   };
 
-  const runHelloWorldTests = () => {
+const runHelloWorldTests = () => {
     const testsOutput = [
       '[DEBUG] Hello, world!               (raw: 5735816763073854953388147237921)',
       '',
@@ -52,9 +62,9 @@ const Comandos = () => {
     ];
 
     setOutput(testsOutput);
-  };
+};
 
-  const runAssertTests = () => {
+const runAssertTests = () => {
     const testsOutput = [
       'running 1 tests',
       'test Assert::Assert::test_main ... ok',
@@ -62,9 +72,9 @@ const Comandos = () => {
     ];
 
     setOutput(testsOutput);
-  };
+};
 
-  const runVariableTests = () => {
+const runVariableTests = () => {
     const testsOutput = [
       'running 1 tests',
       'test Variable::Variable::test_main ... ok',
@@ -72,23 +82,69 @@ const Comandos = () => {
     ];
 
     setOutput(testsOutput);
-  };
+};
 
-  const runVariableTests2 = () => {
+const runVariableTests2 = () => {
     const testsOutput = [
       'Run completed successfully, returning []',
     ];
 
     setOutput(testsOutput);
-  };
+};
 
-  const handleFunctionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+const runIfTest = () => {
+  const testsOutput = [
+    '[DEBUG] Cairo is awesome!               (raw: 22928401211463211905187340600081071826209)',
+    'Run completed successfully, returning []',
+  ];
+
+  setOutput(testsOutput);
+};
+
+const runNameParTest = () => {
+    const testsOutput = [
+      '[DEBUG]                                 (raw: 3)',
+      '[DEBUG]                                 (raw: 4)',
+      'Run completed successfully, returning []',
+    ];
+
+    setOutput(testsOutput);
+};
+
+const runNameParTest2 = () => {
+    const testsOutput = [
+      '[DEBUG]                                 (raw: 1)',
+      '[DEBUG]                                 (raw: 2)',
+      'Run completed successfully, returning []',
+    ];
+
+    setOutput(testsOutput);
+};
+
+const runFelt = () => {
+    const testsOutput = [
+      'Run completed successfully, returning []',
+    ];
+
+    setOutput(testsOutput);
+};
+
+const runFelt2 = () => {
+    const testsOutput = [
+      'Run completed successfully, returning []',
+    ];
+
+    setOutput(testsOutput);
+};
+
+
+const handleFunctionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedFunction = event.target.value;
     setSelectedFunction(selectedFunction);
     setFunctionCode(getFunctionCode(selectedFunction));
   };
 
-  const getFunctionCode = (selectedFunction: string) => {
+const getFunctionCode = (selectedFunction: string) => {
     switch (selectedFunction) {
       case 'hello-world':
         return `use debug::PrintTrait;
@@ -98,6 +154,7 @@ fn main() {
 }
 
 // cairo-test hello-world.cairo`;
+
 
       case 'assert':
         return `fn main(x: felt252, y: felt252) {
@@ -143,7 +200,96 @@ fn inc(x: u32) -> u32 {
         
 // cairo-run Functions.cairo`;
 
-      default:
+      case 'if':
+        return `use debug::PrintTrait;
+
+fn main() {
+    let is_awesome = true;
+
+    if is_awesome {
+        'Cairo is awesome!'.print();
+    }
+}
+        
+// cairo-run Expression_If.cairo`;
+
+      case 'name_parameters_2':
+        return `use debug::PrintTrait;
+
+fn foo(x: u8, y: u8) {
+    // ...
+}
+
+fn main() {
+    let first_arg = 3;
+    let second_arg = 4;
+    // parameter_name: value
+    foo(x: first_arg, y: second_arg);
+    // foo(y: second_arg, x: first_arg); <- this would produce an error
+    first_arg.print();
+    second_arg.print();
+
+}
+        
+// cairo-run Name_parameters_2.cairo`;
+
+      case 'name_parameters2':
+        return `use debug::PrintTrait;
+
+fn foo(x: u8, y: u8) {
+    // ...
+}
+
+fn main() {
+    let first_arg = 3;
+    let second_arg = 4;
+    // parameter_name: value
+    foo(x: first_arg, y: second_arg);
+    // foo(y: second_arg, x: first_arg); <- this would produce an error
+    first_arg.print();
+    second_arg.print();
+
+}
+        
+// cairo-run Name_parameters2.cairo`;
+
+      case 'Name_parameters':
+        return `use debug::PrintTrait;
+
+fn foo(x: u8, y: u8) {
+}
+
+fn main() {
+    let x = 1;
+    let y = 2;
+    foo(:x, :y);
+    x.print();
+    y.print();
+}
+        
+// cairo-run Name_parameters.cairo`;
+
+      case 'felt':
+        return `fn main() {
+   // max value of felt252
+   let x = 3618502788666131213697322783095070105623107215331596699973092056135872020480;
+   let y = 1;
+   assert(x + y == 0, 'P == 0 (mod P)');
+}
+        
+// cairo-run Felt.cairo`;
+
+      case 'felt2':
+        return `fn main() {
+   // max value of felt252
+   let x: felt252 = 3618502788666131213697322783095070105623107215331596699973092056135872020480;
+   let y: felt252 = 1;
+   assert(x + y == 0, 'P == 0 (mod P)');
+    
+}      
+// cairo-run Felt2.cairo`;
+
+     default:
         return '';
     }
   };
@@ -179,7 +325,7 @@ return (
           <div className="function-container">
             <h2>Ejemplos Cairo - Ejecuta los comandos que encontrarán al final de cada función con //</h2>
             <div className="function-select-container">
-              <label htmlFor="function-select">Selecciona una función:</label>
+              <label htmlFor="function-select">Selecciona una Ejemplo:</label>
               <select
                 id="function-select"
                 value={selectedFunction}
@@ -190,6 +336,12 @@ return (
                 <option value="assert">Assert</option>
                 <option value="variables">Variables</option>
                 <option value="functions">Funciones</option>
+                <option value="if">If Expression</option>
+                <option value="Name_parameters">Name Parameters </option>
+                <option value="name_parameters_2">Name Parameters 2</option>
+                <option value="felt">Felt</option>
+                <option value="felt2">Felt 2</option>
+                
               </select>
             </div>
             {selectedFunction && (
