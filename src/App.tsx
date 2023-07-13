@@ -11,7 +11,8 @@ import StarknetESComponent from './components/StarknetEs';
 import NHSComponent from './components/NftForm';
 import WorkshopComponent from './components/Workshop';
 import JuegaComponent from './components/Juega';
-import ComandosComponent from './components/Comandos'
+import ComandosComponent from './components/Comandos';
+import MulticallComponent from './components/Multicall';
 
 function App() {
   const { isConnected } = useAccount();
@@ -61,6 +62,11 @@ function App() {
                   Terminal
                 </Link>
               </li>
+              <li>
+                <Link to="/Multicall" className="link">
+                  Multicall
+                </Link>
+              </li>
               <li className="ml-auto mr-4">
                 <SignForm />
               </li>
@@ -81,6 +87,7 @@ function App() {
                 <Route path="/Workshop" element={<WorkshopPage />} />
                 <Route path="/Juega" element={<JuegaPage />} />
                 <Route path="/Comandos" element={<ComandosPage />} />
+                <Route path="/Multicall" element={<MulticallPage />} />
               </Routes>
             </div>
           ) : (
@@ -138,8 +145,13 @@ function WorkshopPage() {
 function JuegaPage() {
   return <JuegaComponent />;
 }
+
 function ComandosPage() {
   return <ComandosComponent />;
+}
+
+function MulticallPage() {
+  return <MulticallComponent />;
 }
   
 

@@ -1,17 +1,22 @@
 .network-info-container {
-    margin-top: 2rem; /* Ajusta la distancia desde los elementos superiores según tus necesidades */
-    display: flex; /* Aplica un diseño flexible */
-    align-items: center; /* Centra verticalmente los elementos */
-    position: relative; /* Agrega posición relativa */
-    z-index: 1; /* Ajusta el valor del z-index según tus necesidades */
-  }
-  
-  
-  .network-info-container p {
-    margin-right: 1rem; /* Ajusta el margen derecho según tus necesidades */
-  }
-  
-  .network-info-container p:last-child {
-    margin-right: 0; /* Elimina el margen derecho para el último elemento */
-  }
-  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  background-color: #ffffff00;
+  z-index: 9999;
+  color: azure;
+}
+
+.network-info-container p {
+  margin-right: 1rem;
+}
+
+.network-info-container p:last-child {
+  margin-right: 0;
+}

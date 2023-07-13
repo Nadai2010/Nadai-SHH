@@ -8,6 +8,7 @@
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
   
 }
 
@@ -94,19 +95,17 @@
 
 .nft-form .nft-image {
   margin-top: 20%;
-  max-width: 100px; /* Ajusta el ancho máximo de la imagen del NFT */
-  max-height: 100px; /* Ajusta la altura máxima de la imagen del NFT */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 100px; 
+  max-height: 100px; 
+  margin: 0 auto; 
   cursor: pointer;
   transition: transform 0.3s ease;
   border-radius: 50%;
   
 }
 
-
-
 .nft-form .nft-image:hover {
-  transform: scale(4); /* Hace la imagen un 20% más grande al pasar el cursor sobre ella */
+  transform: scale(4); 
 }
 
 .nft-image {

@@ -8,6 +8,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
 }
 
 .token-form h3 {

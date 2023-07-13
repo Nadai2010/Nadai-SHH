@@ -1,12 +1,18 @@
 .source-container {
-    position: absolute;
-    bottom: -10px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
-    right: 2rem; /* Ajusta la distancia desde la derecha según tus necesidades */
-    margin-bottom: 20px; /* Ajusta el margen inferior para dejar espacio para el pie de página */
-    display: flex; /* Aplica un diseño flexible */
-  }
-  
-  .source-container a {
-    display: block;
-    margin-right: 1rem; /* Ajusta el margen derecho según tus necesidades */
-  }
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  background-color: #ffffff00;
+  z-index: 9999;
+  color: azure;
+}
+
+.source-container a {
+  margin-right: 1rem; 
+}

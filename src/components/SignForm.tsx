@@ -14,7 +14,6 @@ export default function SignForm() {
   const { isConnected } = useAccount();
   const { chain } = useNetwork();
 
-  // Prepare the message to sign
   const typedMessage: typedData.TypedData = {
     types: {
       StarkNetDomain: [
@@ -39,14 +38,12 @@ export default function SignForm() {
     },
   };
 
-  // Hook to sign the message
-  const { data, signTypedData } = useSignTypedData(typedMessage);
+    const { data, signTypedData } = useSignTypedData(typedMessage);
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
-    // Check if the user is logged in (simulated)
-    if (isConnected) {
+      if (isConnected) {
       // Perform the authentication process here (simulated)
       // For example, check if the message and secretWord match the expected values
       const expectedMessage = "Hello";
