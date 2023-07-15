@@ -38,21 +38,21 @@ In this section, we aim to showcase the power of customizing ERC-20 token transf
 ![Alt text](src/assets/image.png)
 
 ## HDS:
-In this section we want to improve the experience of the community around the biweekly "Hablando de Starknet" Spanish-speaking show. Here we want to issue our POAPs under the form of NFTs on Starknet, where the secret word mentioned during the Space will unlock the corresponding button to mint the `NHT` token. The idea is to migrate the ERC-721 contracts from Cairo 0 to Cairo contracts, with each secret word hidden within the contract.
+In this section we want to improve the experience of the community around the biweekly **"Hablando de Starknet"** Spanish-speaking show. Here we want to issue our POAPs under the form of NFTs on Starknet, where the secret word mentioned during the Space will unlock the corresponding button to mint the `NHT` token. The idea is to migrate the ERC-721 contracts from Cairo 0 to Cairo contracts, with each secret word hidden within the contract.
 
 Therefore, in this section, you can learn about Starknet while being able to claim your `NHT` tokens with the secret word mentioned in the podcast. Furthermore, these `NHT` tokens will be displayed on `Braavos`, `Explorer` and more.
 
 ![Alt text](src/assets/image-2.png)
 
 ## NHT:
-A gallery of designs for each released ERC-721 token, loading the metadata of each space. You can also send a token by providing the `From`, `Recipient`, and `Token ID` values, along with the secret word to unlock the "Nadai" button.
+A design gallery for each HDS-related ERC-721 token, loading the metadata of each space. You can also send a token by providing the `From`, `Recipient`, and `Token ID` values, along with the secret word to unlock the "Nadai" button.
 
 In this section, we reinforce what was seen in the token form. This time, we will see how the design is visualized in the transaction, the transaction data (`Calldata`), and how to easily transfer our POAP tokens.
 
 ![Alt text](src/assets/image-1.png)
 
 ## Starknet en Español:
-This tab is dedicated to "Jueves de Cairo," which we organize for the Spanish-speaking community. We will also add official resources such as the Cairo Book, Starknet Book, Cairo Lang Docs, and Starknet Docs.
+This tab is dedicated to **"Jueves de Cairo"** which are **"Cairo-Thursdays"** organized by the Spanish-speaking community. We will also add official resources such as the Cairo Book, Starknet Book, Cairo Lang Docs, and Starknet Docs.
 
 ![Alt text](src/assets/image-3.png)
 
