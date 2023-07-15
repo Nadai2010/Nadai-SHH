@@ -38,9 +38,9 @@ In this section, we aim to showcase the power of customizing ERC-20 token transf
 ![Alt text](src/assets/image.png)
 
 ## HDS:
-A space that simulates the experience of HDS (Hablando de Starknet), where each guest shares their knowledge about specific topics in the ecosystem. We are migrating this space with POAP here, where each secret word will unlock the corresponding button to mint the `NHT` token. The idea is to migrate the ERC-721 contracts from Cairo 0 to Cairo contracts, with each word possibly hidden within the contract.
+In this section we want to improve the experience of the community around the biweekly "Hablando de Starknet" Spanish-speaking show. Here we want to issue our POAPs under the form of NFTs on Starknet, where the secret word mentioned during the Space will unlock the corresponding button to mint the `NHT` token. The idea is to migrate the ERC-721 contracts from Cairo 0 to Cairo contracts, with each secret word hidden within the contract.
 
-In this section, you can learn about the ecosystem with Spanish-speaking guests. You can claim your `NHT` tokens with the secret word of the space, and these `NHT` tokens can be viewed in `Braavos`, `Exploradores`, and more.
+Therefore, in this section, you can learn about Starknet while being able to claim your `NHT` tokens with the secret word mentioned in the podcast. Furthermore, these `NHT` tokens will be displayed on `Braavos`, `Explorer` and more.
 
 ![Alt text](src/assets/image-2.png)
 
