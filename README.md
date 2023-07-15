@@ -2,7 +2,7 @@
 <img alt="starknet logo" src="https://github.com/Nadai2010/Nadai-SHH/blob/main/src/assets/image-9.png" width="600" >
   <h1 style="font-size: larger;">
     <img src="https://github.com/Nadai2010/Nadai-SHARP-Starknet/blob/master/im%C3%A1genes/Starknet.png" width="40">
-    <strong>Guía Definitiva de Starknet-Es Cairo 1</strong> 
+    <strong>Nadai's Cairo Learning dApp</strong> 
     <img src="https://github.com/Nadai2010/Nadai-SHARP-Starknet/blob/master/im%C3%A1genes/Starknet.png" width="40">
   </h1>
 
@@ -25,10 +25,10 @@
 <a href="https://github.com/Starknet-Es/StarknetEs-Aprendizaje">
 </div>
 
-# Source Nadai Dapp
-This application is a test version where I have been learning to implement various resources to facilitate the entry of new developers into the ecosystem.
+# Summary
+This is a test version of an application wich features serveral differents resources. The goal of this dApp is helping new developers to learn the Cairo programming language and onboarding them into Starknet in a fun and interactive way.
 
-In this application, you will find the following sections:
+Nadai's Cairo Learning dApp is made out of the following sections:
 
 ## Home:
 A form that detects the balance of the added tokens. A test token called `NAI` has been deployed on Cairo 1 (which allows free token minting), as well as tokens such as `ETH`, `DAI`, `WBTC`, or `USDT`. In the form, you need to enter the `Recipient`, `Amount`, and a secret word `Nadai` to unlock the `Send` button.
