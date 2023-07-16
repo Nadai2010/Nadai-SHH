@@ -112,7 +112,7 @@ function HomeWithTokenForm() {
     <>
       <div>
       <h1 className="title text-4xl shadowed" style={{ marginBottom: "50px" }}>
-       Nadai Starknet Dapp
+       Nadai's Cairo Learning dApp
       </h1>
      </div>
       <TokenForm /> 
