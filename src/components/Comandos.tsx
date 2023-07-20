@@ -565,7 +565,7 @@ fn main() {
   };
 
 
-return (
+  return (
     <div className="comandos-container">
       <div className="terminal-container">
         <div className="terminal-header">
@@ -620,19 +620,16 @@ return (
                 <option value="Scalar_Types_Operator_Arithmetic">Scalar Type Operator Arithmetic</option>
                 <option value="Scalar_Types_Operator_Comparison">Scalar Type Operator Comparison</option>
                 <option value="Scalar_Types_Operator_u256">Scalar Type Operator u256</option>
-                
-                
               </select>
             </div>
             {selectedFunction && (
               <div className="code-container">
                 <div className="function-content">
-                <div className="copy-link" onClick={handleCopyFunction}>
-                <FontAwesomeIcon icon={faCopy} />
-               </div>
+                  <div className="copy-link" onClick={handleCopyFunction}>
+                    <FontAwesomeIcon icon={faCopy} />
+                  </div>
                   <pre>{functionCode}</pre>
                 </div>
-
               </div>
             )}
           </div>
@@ -640,6 +637,7 @@ return (
       </div>
     </div>
   );
+  
   
 }
   

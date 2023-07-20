@@ -12,7 +12,9 @@ import NHSComponent from './components/NftForm';
 import WorkshopComponent from './components/Workshop';
 import JuegaComponent from './components/Juega';
 import ComandosComponent from './components/Comandos';
+import StandarComponent from './components/Standar';
 import MulticallComponent from './components/Multicall';
+import UniversalComponent from './components/Universal';
 
 function App() {
   const { isConnected } = useAccount();
@@ -63,6 +65,16 @@ function App() {
                 </Link>
               </li>
               <li>
+                <Link to="/Standar" className="link">
+                  Standar
+                </Link>
+              </li>
+              <li>
+                <Link to="/Universal" className="link">
+                  Universal
+                </Link>
+              </li>
+              <li>
                 <Link to="/Multicall" className="link">
                   Multicall
                 </Link>
@@ -87,7 +99,9 @@ function App() {
                 <Route path="/Workshop" element={<WorkshopPage />} />
                 <Route path="/Juega" element={<JuegaPage />} />
                 <Route path="/Comandos" element={<ComandosPage />} />
+                <Route path="/Standar" element={<StandarPage />} />
                 <Route path="/Multicall" element={<MulticallPage />} />
+                <Route path="/Universal" element={<UniversalPage />} />
               </Routes>
             </div>
           ) : (
@@ -112,7 +126,7 @@ function HomeWithTokenForm() {
     <>
       <div>
       <h1 className="title text-4xl shadowed" style={{ marginBottom: "50px" }}>
-       Nadai's Cairo Learning dApp
+       Nadai Starknet Dapp
       </h1>
      </div>
       <TokenForm /> 
@@ -150,9 +164,16 @@ function ComandosPage() {
   return <ComandosComponent />;
 }
 
+function StandarPage() {
+  return <StandarComponent />;
+}
+
+function UniversalPage() {
+  return <UniversalComponent />;
+}
+  
 function MulticallPage() {
   return <MulticallComponent />;
 }
   
-
 export default App;
