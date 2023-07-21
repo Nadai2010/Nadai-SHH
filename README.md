@@ -68,6 +68,18 @@ In this section, you can enhance learning with basic examples taken from Cairo-b
 
 ![Alt text](src/assets/image-5.png)
 
+## Standar:
+This tab is designed as a standard for contracts for easy development. Here, you can find information for each necessary data, as well as the logic of the contracts in case you need it for other developments. You will find the Class Hash of the declared contract and the number of arguments required for deployment. 
+
+Additionally, you'll find an example of the arguments passed in each one. If you decide to deploy a standard contract, you can go directly to the next Universal section.
+
+![Alt text](src/assets/image-10.png)
+
+## Universal:
+This tab is designed to display contracts with just one click, using Starknet's Universal Contract Deplo ([UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract)) making it easy, practical, and secure for all those who want to start testing in a simple way. You only need to decide what type of contract you need and adjust its values according to your requirements. Additionally, we will provide the necessary steps to convert the values to felt252, along with an explanation and utility of each one."
+
+![Alt text](src/assets/image-11.png)
+
 ## Multicall:
 This tab will teach the power of native Multicall in Cairo. In this form, you can "Mint" the "NAI" token and transfer both "NAI" and "ETH" if desired, by executing 3 different calls, each with its own set of data (`Calldata`).
 
