@@ -76,12 +76,14 @@ Additionally, you'll find an example of the arguments passed in each one. If you
 ![Alt text](src/assets/image-10.png)
 
 ## Universal:
-This tab is designed to display contracts with just one click, using Starknet's Universal Contract Deplo ([UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract)) making it easy, practical, and secure for all those who want to start testing in a simple way. You only need to decide what type of contract you need and adjust its values according to your requirements. Additionally, we will provide the necessary steps to convert the values to felt252, along with an explanation and utility of each one."
+This tab is designed to display contracts with just one click, using Starknet's Universal Contract Deploy ([UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract)) making it easy, practical, and secure for all those who want to start testing in a simple way. You only need to decide what type of contract you need and adjust its values according to your requirements.
+
+Additionally, we will provide the necessary steps to convert the values to felt252, along with an explanation and utility of each one.
 
 ![Alt text](src/assets/image-11.png)
 
 ## Multicall:
-This tab will teach the power of native Multicall in Cairo. In this form, you can "Mint" the "NAI" token and transfer both "NAI" and "ETH" if desired, by executing 3 different calls, each with its own set of data (`Calldata`).
+This tab will teach the power of native Multicall in Cairo. In this form, you can `Mint` the `NAI` token and transfer both `NAI` and `ETH` if desired, by executing 3 different calls, each with its own set of data (`Calldata`).
 
 In this section, we can demonstrate how infinite approvals are no longer needed and how DeFi protocols in Starknet benefit from this power. The idea is to add various Multicall forms, including one for UDC, and provide an easy way for developers to deploy ERC-20, ERC-1155, AMM, Vault, or any other smart contract in Cairo that we want to include.
 
