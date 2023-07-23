@@ -76,7 +76,7 @@ const HDS = () => {
 
   return (
     <div className="hds-container">
-      <div className="hds-title text-4xl shadowed mb-5">Hablando De Starknet</div>
+      <div className="hds-title text-4xl shadowed mb-5">🔈Hablando De Starknet 🔊</div>
       <div className="hds-video">
         <YouTube videoId={videoIds[currentVideoIndex]} opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} />
       </div>

@@ -126,7 +126,7 @@ export default function TokenForm() {
           <input
             type="password"
             name="secretWord"
-            placeholder="Secret Word"
+            placeholder="Secret Word Nadai"
             required
             value={secretWord}
             onChange={handleSecretWordChange}

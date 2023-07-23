@@ -40,7 +40,7 @@ const Workshop = () => {
 
   return (
     <div className="workshop-container">
-      <div className="workshop-es-title text-4xl shadowed mb-5">Pioneros - Basecamp en Español</div>
+      <div className="workshop-es-title text-4xl shadowed mb-5">👨‍🎓 Pioneros - Basecamp en Español</div>
       <div className="workshop-es-video-grid">
         <div className="workshop-es-video-item">
         <YouTube videoId={videoIdPioneros[currentVideoIndexPioneros]} opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} />
@@ -57,7 +57,7 @@ const Workshop = () => {
           Siguiente
         </button>
       </div>
-      <div className="workshop-es-title text-4xl shadowed mb-5">Workshops - L2 en Español</div>
+      <div className="workshop-es-title text-4xl shadowed mb-5">👨‍💻 Workshops - L2 en Español</div>
       <div className="workshop-es-video-grid">
         <div className="workshop-es-video-item">
           <YouTube videoId={videoIdL2[currentVideoIndexL2]} opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} />

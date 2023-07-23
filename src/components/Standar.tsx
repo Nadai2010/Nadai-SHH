@@ -511,8 +511,8 @@ const Standar = () => {
           >
             <option value="">-- Select --</option>
             <option value="Owner">Owner</option>
-            <option value="Vote">Vote</option>
-            <option value="Erc20">Erc20</option>
+            <option value="Vote">Vote (Falta Implementar)</option>
+            <option value="Erc20">Erc20 (Falta Implementar)</option>
             
           </select>
         </div>

@@ -40,31 +40,33 @@ const StarknetEs = () => {
   const resources: Resource[] = [
     {
       id: "1",
-      image: "../src/assets/StarknetBook.png",
+      image: "../StarknetBook.png",
       title: "Starknet Book",
       description: "El libro de todo el ecosistema de Starknet, una documentación exhaustiva de arquitectura, y Starknet general, Starknet Book",
       link: "https://book.starknet.io/",
     },
     {
       id: "2",
-      image: "../src/assets/CairoBook.png",
-      title: "Título del Recurso 2",
-      description: "Descripción del Recurso 2",
+      image: "../CairoBook.png",
+      title: "Cairo Book",
+      description: "Descubre el libro de Aprendizaje sobre el Lenguaje de Programación Cairo y domina su sintaxis.",
       link: "https://cairo-book.github.io/",
     },
     {
       id: "3",
-      image: "../src/assets/CairoBook.png",
-      title: "Título del Recurso 2",
-      description: "Descripción del Recurso 2",
-      link: "https://cairo-book.github.io/",
+      image: "../StarknetDoc.png",
+      title: "Starknet Doc",
+      description: "Documentos oficiales en General de Starknet",
+      link: "https://docs.starknet.io/documentation/",
     },
+
+
     {
       id: "4",
-      image: "../src/assets/CairoBook.png",
-      title: "Título del Recurso 2",
-      description: "Descripción del Recurso 2",
-      link: "https://cairo-book.github.io/",
+      image: "../CairoDoc.png",
+      title: "Cairo Doc",
+      description: "Documentos oficiales en General de Cairo",
+      link: "https://www.cairo-lang.org/docs/",
     },
   ];
   
@@ -74,7 +76,7 @@ const StarknetEs = () => {
 
   return (
     <div className="starknet-es-container">
-      <div className="starknet-es-title text-4xl shadowed mb-5">Starknet en Español</div>
+      <div className="starknet-es-title text-4xl shadowed mb-5"> 📺 Starknet en Español</div>
       <div className="starknet-es-video-grid">
         <div className="starknet-es-video-item">
           <YouTube videoId={videoIds[currentVideoIndex]} opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} />
@@ -85,7 +87,7 @@ const StarknetEs = () => {
       </div>
       <div className="starknet-es-navigation">
         <button className="starknet-es-button starknet-es-previous-button" onClick={goToPreviousVideo}>
-Anterior
+          Anterior
         </button>
         <button className="starknet-es-button starknet-es-next-button" onClick={goToNextVideo}>
           Siguiente
@@ -93,7 +95,7 @@ Anterior
       </div>
    
       <div className="starknet-es-resource-container">
-        <div className="starknet-es-resource-title text-4xl shadowed mb-5">Recursos Starknet</div>
+        <div className="starknet-es-resource-title text-4xl shadowed mb-5">📖 Recursos Starknet</div>
         <div className="starknet-es-resource-grid">
           {resources.map((resource) => (
             <div className="starknet-es-resource-card" key={resource.id} onClick={() => openResourceDetails(resource)}>
