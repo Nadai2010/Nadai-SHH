@@ -125,8 +125,7 @@ const Standar = () => {
         }`
       
         case 'Vote':
-        return `@dev Core Library Imports for the Traits outside the Starknet Contract
-        use starknet::ContractAddress;
+        return `use starknet::ContractAddress;
         
         /// @dev Trait defining the functions that can be implemented or called by the Starknet Contract
         #[starknet::interface]
