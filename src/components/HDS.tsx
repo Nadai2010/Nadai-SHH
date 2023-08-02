@@ -18,7 +18,7 @@ const secretWords: SecretWords = {
   argentina: "0x07d5a2a46e422fd5d5706ca8599db243760ae29b4a58a975159cebe5e7f2ea69",
   playa: "0x0266fa8b7380043135c23b862be06a942adb955fef7a46e1b8c7d73d7b48befd",
   jugar: "0x02269df2f4cae317c90fdcb1a8fa8fbe21744ac9e197721ecaa3baf14c1b3571",
-  word9: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
+  planeta: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
   word10: "0",
 };
 

@@ -10,10 +10,10 @@ import HDSComponent from './components/HDS';
 import StarknetESComponent from './components/StarknetEs';
 import NHSComponent from './components/NftForm';
 import WorkshopComponent from './components/Workshop';
-import JuegaComponent from './components/Juega';
 import ComandosComponent from './components/Comandos';
 import StandarComponent from './components/Standar';
 import MulticallComponent from './components/Multicall';
+import Multicall2Component from './components/Multicall2';
 import UniversalComponent from './components/Universal';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
                 <Info />
               </li>
               <li className="ml-auto mr-4">
-                <Link to="/" className="link">
+                <Link to="/" className="link text-sm">
                   Inicio
                 </Link>
               </li>
@@ -55,11 +55,6 @@ function App() {
                 </Link>
               </li>
               <li>
-                <Link to="/Juega" className="link">
-                  Juega
-                </Link>
-              </li>
-              <li>
                 <Link to="/Comandos" className="link">
                   Terminal
                 </Link>
@@ -77,6 +72,11 @@ function App() {
               <li>
                 <Link to="/Multicall" className="link">
                   Multicall
+                </Link>
+              </li>
+              <li>
+                <Link to="/Multicall2" className="link">
+                  Multicall x100
                 </Link>
               </li>
               <li className="ml-auto mr-4">
@@ -97,10 +97,10 @@ function App() {
                 <Route path="/hds" element={<HDSPage />} />
                 <Route path="/starknet-es" element={<StarknetESPage />} />
                 <Route path="/Workshop" element={<WorkshopPage />} />
-                <Route path="/Juega" element={<JuegaPage />} />
                 <Route path="/Comandos" element={<ComandosPage />} />
                 <Route path="/Standar" element={<StandarPage />} />
                 <Route path="/Multicall" element={<MulticallPage />} />
+                <Route path="/Multicall2" element={<Multicall2Page />} />
                 <Route path="/Universal" element={<UniversalPage />} />
               </Routes>
             </div>
@@ -156,10 +156,6 @@ function WorkshopPage() {
   return <WorkshopComponent />;
 }
 
-function JuegaPage() {
-  return <JuegaComponent />;
-}
-
 function ComandosPage() {
   return <ComandosComponent />;
 }
@@ -174,6 +170,10 @@ function UniversalPage() {
   
 function MulticallPage() {
   return <MulticallComponent />;
+}
+
+function Multicall2Page() {
+  return <Multicall2Component />;
 }
   
 export default App;
